@@ -1,0 +1,52 @@
+
+
+
+body{
+
+	background-color: #c0c0c0;
+
+
+}
+
+
+
+
+
+
+.Galeria{
+background: #fffff0;
+width: min-content;
+margin: 20px;
+float: left;
+padding: 5px 5px 10px 5px;
+border-width: 2px black;
+text-align: center;
+
+
+}
+
+
+p{
+	font-family: "Opensans -Regular",Arial, sans-serif;
+	text-align: justify;
+	clear: both;
+	color: #000000;
+	font-size: 20px;
+	padding-left: 15px;
+	padding-right: 10px
+	line-height:24px;
+
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+

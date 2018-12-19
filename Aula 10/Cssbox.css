@@ -1,0 +1,45 @@
+
+
+.noticia{
+
+	font-family: "opensans-regular", arial, sans-serif;
+	background-color: #F5F5DC;
+	border: 1px solid black;
+	color: #333;
+	font-size:16px;
+	padding-left: 15px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 20px;
+	text-align: justify;
+	line-height: 24px; 
+	width: 500px;
+	float: right;
+
+}
+
+.noticia h1{
+	color: #c4170c;
+	font-family: "Helvetica Neue", Arial,sans-serif;
+	margin: 8px;
+
+}
+
+.noticia p{
+	clear:both;
+
+}
+
+.imagem{
+	float: left;
+	width: 200px;
+	padding: 10px;
+	clear: none;
+
+}
+
+
+
+
+
