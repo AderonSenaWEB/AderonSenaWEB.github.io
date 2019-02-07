@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<title>Meu Blog</title>
+
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+
+ </head>  
+
+<Body class="temas">
+
+<header class="hv">
+
+        <div class="center">    
+
+                <nav>
+                
+                <ul class="logo"><a href="index.html"><p><span class="two-colors">Sou+</span>SuperMáquinas</p></a></ul>
+                   
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.lamborghini.com/en-en">Lamborghini</a></li>
+                    <li><a href="https://www.ferrari.com/en-US">Ferrari</a></li>
+                    <li><a href="http://www.techtudo.com.br/">Tec Tudo</a></li>
+                    <li><a href="https://www.spacex.com/">SpacEx</a></li>
+                    <li><a href="../Referências/Refererencias.html">Referências</a></li>
+                    
+                </ul>
+            
+            </nav>
+            
+    </div>
+
+
+</header>
+
+       
+
+
+<div id="visao">
+
+        <article class="subtitule">
+            <p><P>Ultimas Postagens</P>
+        </article>
+
+<section class="post">
+
+
+        <h1>Lamborghini Aventador - Evoluindo Sempre!</h1>
+
+        <span>
+                <time datetime="2019-02-03">Postado 03 de fevereiro de 2019</time>
+        </span><hr>
+
+		<img class="imagem" src= "../images/evo.jpg">
+
+		<p>O Aventador LP 750-4 Superveloce toma emprestado ainda uma série de tecnologias vindas do ainda mais raro Lamborghini Veneno, inclusive na mesma receita de diminuição de peso e de aumento de potência do motor, só que por um décimo do preço pedido pelo supercarro de 2013, com apenas três unidades produzidas por 3,1 milhões de euros. O SV tem desempenho até ligeiramente melhor do que desses dois superesportivos exclusivos, vai aos 100 km/h em 2,8 segundos e ultrapassa os 350 km/h de velocidade máxima. Na medida para fazer valer a sigla surgida em 1971 no Miura SV e continuada pelo Diablo SV de 1996 e pelo antecessor Murciélago SV de 2009. A estrutura e carroceria parecem se valer de boa parte da tabela periódica para obter peso mínimo. O chassi é inteiro em fibra de carbono, material que é repetido no capô, spoilers e entradas de ar laterais. O alumínio foi a pedida para o capô dianteiro, para-lamas frontais e portas. Já os para-lamas traseiros e as soleiras das portas são feitos em material composto. As enormes rodas de aros finíssimos estrearam no carro com a mesma missão e até adotaram porcas centrais para diminuir a massa rotante dos parafusos usados normalmente.</p>
+        <p>Postado por ADERSON DE SENA</p> 
+     
+</section>
+
+</br>
+
+<section class="post">
+        
+        
+                <h2>SpaceEX - Revolução Espacial!</h2>
+
+                <span>
+                        <time datetime="2019-02-04">Postado 04 de fevereiro de 2019</time>
+                </span><hr>
+
+            
+                <img class="imagem" src= "../images/spaceex.jpg">
+        
+                <p>O Programa de Tripulações Comerciais da NASA confirmou esta semana um atraso no vôo de teste planejado do módulo Crew Dragon da SpaceX. O voo de teste Demo-1 não tripulado, verá o módulo de carga adaptado para astronautas disparar para o espaço. A Nasa, em parceria com a SpaceX e a Boeing, pretende diminuir sua dependência dos foguetes russos Soyuz para enviar astronautas à Estação Espacial Internacional (ISS). A agência espacial norte-americana agora tem como alvo o dia 2 de março para o lançamento do Crew Dragon da SpaceX e “não antes de abril” para o teste de voo não tripulado da Boeing.</p>
+                <p>Postado por ADERSON DE SENA</p> 
+             
+        </section>
+       <br>
+
+
+
+        <section class="post">
+        
+        
+                <h2>Ferrari GT - F XX K  1050 HP!</h2>
+
+                <span>
+                        <time datetime="2019-02-04">Postado 06 de fevereiro de 2019</time>
+                </span><hr>
+
+            
+                <img class="imagem" src= "../images/ferrarigt.png">
+        
+                <p>FXX-K is Ferrari’s research and development programme centring around a laboratory car based on Maranello’s first hybrid. The K in the new car’s moniker is a reference to the KERS kinetic energy recovery system used to maximise performance on the track. The 2018 season will be the introduction of the brand new EVO kit.The 488 Challenge is the first ever turbo-charged model to race and is the most powerful Challenge car ever, powered by the 670 cv 3.9-litre V8 derived from the series production engine that took the 2016 and 2017 International Engine of the Year Award.</p>
+                <p>Postado por ADERSON DE SENA</p> 
+             
+        </section>
+       
+
+</div>
+
+<!--Transção com Banco de Dados códicgo referencia-https://www.tutorialspoint.com/html5/html5_web_sql.htm-->T
+<script type = "text/javascript"> 
+        var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024); 
+        var msg; 
+   
+        db.transaction(function (tx) { 
+           tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)'); 
+           tx.executeSql('INSERT INTO LOGS (id, log) VALUES (1, "foobar")'); 
+           tx.executeSql('INSERT INTO LOGS (id, log) VALUES (2, "logmsg")'); 
+           msg = '<p>Log message created and row inserted.</p>'; 
+           document.querySelector('#status').innerHTML =  msg; 
+        })
+
+        db.transaction(function (tx) { 
+           tx.executeSql('SELECT * FROM LOGS', [], function (tx, results) { 
+              var len = results.rows.length, i; 
+              msg = "<p>Found rows: " + len + "</p>"; 
+              document.querySelector('#status').innerHTML +=  msg; 
+     
+              for (i = 0; i < len; i++) { 
+                 msg = "<p><b>" + results.rows.item(i).log + "</b></p>"; 
+                 document.querySelector('#status').innerHTML +=  msg; 
+              } 
+           }, null); 
+        }); 
+     </script> 
+
+
+
+
+<footer >
+        <p align="center">Teresina@Criações-2019</p>
+
+</footer>
+
+
+
+</Body>
+
+
+</html>
+

@@ -1,0 +1,141 @@
+  .temas{
+      background-color: #F2F2F2;
+
+  }         
+
+ 
+.center{
+max-width: 11100px;
+margin: -10px;
+padding: 0 a 2%;
+
+}
+
+header{
+    padding: 9px 0;
+    text-align: right;
+    background-image: url(../images/Ferrari3.jpg);
+
+}
+
+header li{
+    display:inline-block;
+    padding: 0 10px;
+    
+}
+
+header a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 40px;
+
+}
+
+header li a:hover{
+    color: #fff;
+    background: #4698ca;
+    border-top-color: #5db1e0 !important;
+    border-left-color: #5db1e0;
+    
+     }
+
+.hv{
+
+    
+
+
+
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    background:red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+
+hr {
+	width: 100%;
+	text-align: left; /* Para o IE */
+	margin: 0 auto 0 0; /* Para navegadores standard */
+}
+
+.post{
+margin: 100px;
+padding: 40px;
+background-color: azure;
+background-image: linear-gradient(to bottom,#1e5799 0%,#2989d8,#98FB98,#90EE90,#ADFF2F);
+text-align: justify;
+padding-left: 15px;
+padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+width: 700px;
+line height: 24px;
+border: 1px solid black;
+box-shadow: 5px 10px #aaaaaa;
+border-radius: 20px;
+
+
+}
+
+
+.subtitule{
+font-family: 'Courier New', Courier, monospace;
+font-size: 50px;
+text-align: center;
+text-shadow: 2px -2px 10px black;
+
+
+}
+
+
+
+
+.post h1{
+color: #FF0000;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin: 8px;
+text-shadow: 0.1em 0.1em 0.2em black;
+
+
+}
+
+.post h2{
+    color:#FFFF00 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 8px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    
+    
+    }
+
+.imagem {
+float: left;
+width: 200px;
+border-radius: 20px;
+padding: 10px;
+
+}
+
+.post p{
+	clear:right;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
