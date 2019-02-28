@@ -1,30 +1,27 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="data.css">
+    
+    <script type="text/javascript">
+    function mostravalor(componente) {
+        var valor = componente.getAttribute('data-idade');
+        alert(valor);
+    </script>
 </head>
 
 
 <body>
 
-<ul>
-
-    <li></li>
-
-
-
-</ul>
-
-
-
-
-
-
+    <ul>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="20">João</li>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="30">José</li>
+        <li class="pessoa" onclick="mostravalor(this)" data-idade="40">Maria</li>
+    </ul>
 
 
     
